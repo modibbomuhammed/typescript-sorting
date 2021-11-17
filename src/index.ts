@@ -1,0 +1,24 @@
+import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./NumbersCollection";
+import { CharactersCollection } from "./CharactersCollection";
+import { LinkedList } from "./LinkedList";
+
+const numbersCollection = new NumbersCollection([55, 1, 2, 33, 3, -1, 4]);
+numbersCollection.sort();
+const charactersCollection = new CharactersCollection("AshManToRos");
+charactersCollection.sort();
+const list = new LinkedList();
+list.add(500);
+list.add(700);
+list.add(100);
+list.add(-454);
+// const sorter1 = new Sorter(numbersCollection);
+// const sorter2 = new Sorter(charactersCollection);
+// const sorter3 = new Sorter(list);
+// sorter1.sort();
+// sorter2.sort();
+// sorter3.sort();
+console.log(numbersCollection.data, "done");
+console.log(charactersCollection.data);
+list.sort();
+list.print();
